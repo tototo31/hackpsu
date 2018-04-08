@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hackpsu2018-200502",
+  "private_key_id": "508f8120e49ec9e7b7d2e5ff7c2e53243ebfc6f6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDLoPMMbUXwAKo+\n1UWmkogeHy1wSt4PHShkaTuY7FPAq7+oliB9fNoWGbeIEtYVxLRdZKEoEb7ELEC5\nommoREf/RviF9L+3j/nPag9cD1MOYuWPv520tyTaknq1/vzojNPZZo60t5OaO+m5\n1/A3XPWGambp1m6epb7GcROVjjvFkT8sepXY47pPXCxvjLWJXbcP1lMC8hcAfCem\nn3AVVByMfKsK5xoAqe9iBHiH1bu6KctPbDrYWJ8Xy8nbtAteix1dKpsXUY1B3VeM\nRFLRtLzV3xM7LQzO5Ijz1CiNGnbN/bflWGfJgHXHQtyE3QZgLpNEs/Nm0QtrU6r6\nWaGlfbPdAgMBAAECggEAEODrWvOkN4brYnm6io2co2TxlvXyhSDLsp/RNSJPT1Bz\nlDpP2ob8Uf0/6/mmIQTLViIOt6vZrhh+JV6aHaMw4pVgthEGlf6xqSjBICzgm6sr\nHLWFEXzMabx4vnHMR3+dppusWlXZi5AwYsHmIyvdHPV54iOIZM8XsQqgO6Y5olN7\nVQy0+Zr6ubg1Cf3PeoMSEmu8vpCxnbqEP1FScJQn5UZOUYPMkUIr72gwHxixd54b\n8uHyg6/3bJU7ItDdoz3P1U0fWBvzw3DldJ+IfiAj/8HP52wl5G9aVfJWYykBmF+q\n0GrEkCvV9MIKX+QtYBW+Kt9weHN/gDBJWFEXpjmScwKBgQD27AycaGmR7+9fWRfE\n3BTvzFzVTOe9q/ta0WzQIts9qOwRmXEnUYglrpHzfu3Fbs9Zd5FMWS1eketG8qa3\nNA6UIU8xSkx9InbLMsYxt9GmtXH77CGS4DjefANoG+IK6kg1Jm8WbjfPophvNeZS\nRLY5Jq8ZKVy5tCrQJcc/7LQoowKBgQDTHW/hvUZr/kPHwgUIVmpdkO394NaJCfaQ\nMKfcaL99Tf45Hh5QbtPODATIJaDf/A+dm+qbEGfwk66jNT6Zx4oUxZo1UM+qlOQg\n5dLYmut+ElD0SJAHwK7wEox0sCbx1wxUpfbIUYPERVe9L0nF9dIYbG0T9u2Doabw\nBJFAl335fwKBgQCltbio5vGifRF6PcJT3Rc370CF7XzAr8CaLF4IOLxF3y2+iemE\nZ5UlJMjSTuanTzxcYH/kaxylkOwCyynTXV5DTy9kduZqPEzZBZQ5HZHXfYGnfcry\nVQQVW8i1f7DtfllDQi3fMczGzenbCKMvpulb5XgxPK77+cuZsSDM57/oXQKBgQCa\nVGmmpzwk1DJuhCozpyCIl9sy/bs3YN4rGDaODND3ZB2VWawldm9FsEmKmt9Y/iXY\nPNOrWbnyB7PhwZmqx1Ds0Gtj0FiPRdrjJb8V82J1viQKAEWyNSxtedHNt7wwjNmJ\nw+19EQH3aA200i3nFkXo7tJqhteoo3KrAVvB0T0ZNwKBgCrd9qH4G68QiQOJzhB8\nOgyjA2ky7FZ8aTGuuGMSqYzBzegrkGbQUP0XnF/Fmp7P6u35KLgr54toDjWI6IQL\nDBnuN76u928oKOAj9D/ry+pUmGe5vVXHh7AEvHaTy8JcoZlfT5Acp/r9wxV1r9WB\neSAMsAkdjfiA2Np1AJuMjaDl\n-----END PRIVATE KEY-----\n",
+  "client_email": "hackpsu2018@hackpsu2018-200502.iam.gserviceaccount.com",
+  "client_id": "108882671823900327711",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hackpsu2018%40hackpsu2018-200502.iam.gserviceaccount.com"
+}
