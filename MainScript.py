@@ -12,10 +12,14 @@ file_finish = VisionTesting.image_path_here('webcamPicMarked.jpg')
 WebcamImageScan.take_picture_here(file_path)
 faces = VisionTesting.detect_face(file_path)
 polygons, numFaces = FaceCalculation.map_facial_borderPoly(faces)
-FaceLandmarkDrawing.map_facial_borderPoly(polygons, numFaces, file_path, file_finish)
+#FaceLandmarkDrawing.map_facial_borderPoly(polygons, numFaces, file_path, file_finish)
+FaceLandmarkDrawing.crop_face(polygons, numFaces, file_path)
+
+
 #face = VisionTesting.detect_face(face_file)
 #polygons, numFaces = FaceCalculation.map_facial_borderPoly(face)
 #FaceLandmarkDrawing.map_facial_borderPoly(polygons, numFaces, face_file, face_finish)
+#FaceLandmarkDrawing.crop_face(polygons, numFaces, face_file)
 
 
 

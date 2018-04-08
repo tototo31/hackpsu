@@ -1,4 +1,5 @@
 
+
 #This file is to calculate the landmark and border values
 #and puts them in text files
 
@@ -35,5 +36,8 @@ def map_facial_borderPoly(faces):
         polygons.append(drawVerts)
 
     return polygons, numFaces
+
+
+
             
             

@@ -35,6 +35,26 @@ def map_facial_borderPoly(polygons, numFaces, image_file, output_file):
         draw.polygon(drawVerts,outline='red')
 
     image.save(output_file)
+
+
+def crop_face(polygons, numFaces, image_path):
+    for i in range(numFaces):
+        image = Image.open(image_path)
+        xVals = list()
+        yVals = list()
+        drawVerts = polygons[i]
+        for val in drawVerts:
+            xVals.append(val[0])
+            yVals.append(val[1])
+        xMin = min(xVals)
+        xMax = max(xVals)
+        yMin = min(yVals)
+        yMax = max(yVals)
+        boxTup = (xMin,yMin,xMax,yMax)
+        cropImage = image.crop(boxTup)
+        cropImage.save(image_path[:len(image_path)-4]+str(i)+'.jpg') 
+        
+            
             
             
                                 
