@@ -12,7 +12,7 @@ def map_facial_landmarks(image_file, faces, output_file):
 
     for face in faces:
         for landmark in face.landmarks:
-            print(landmark.type)
+            #print(landmark.type)
             pos = landmark.position
             posX = pos.x
             posY = pos.y
@@ -24,4 +24,23 @@ def map_facial_landmarks(image_file, faces, output_file):
     #draw.point(points)
 
     image.save(output_file)
+
+
+def map_facial_borderPoly(image_file, faces, output_file):
+    image = Image.open(image_file)
+    draw = ImageDraw.Draw(image)
+    
+    for face in faces:
+        vertices = face.boundingPoly.vertices
+        drawVerts = list()
+        for vertex in vertices:
+            x = vertex.x
+            y = vertex.y
+            vertTup = (x,y)
+            drawVerts.append(vertTup)
+        draw.polygon(drawVerts,'red','red')
+
+    image.save(output_file)
+            
+            
                                 

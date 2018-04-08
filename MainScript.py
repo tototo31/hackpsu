@@ -12,6 +12,6 @@ face_finish= VisionTesting.image_path_here('faceMarked.jpg')
 #faces = VisionTesting.detect_face(file_path)
 #FaceLandmarkDrawing.map_facial_landmarks(file_path, faces, file_finish)
 face = VisionTesting.detect_face(face_file)
-FaceLandmarkDrawing.map_facial_landmarks(face_file, face, face_finish)
+FaceLandmarkDrawing.map_facial_borderPoly(face_file, face, face_finish)
 
 
