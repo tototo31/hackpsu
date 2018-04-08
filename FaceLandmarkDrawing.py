@@ -1,43 +1,37 @@
 from PIL import Image, ImageDraw
 
+
+#This file calculates the landmarks and border and draws onto the image
+
 #image_file = VisionTesting.image_path_here(
 
 
 
-def map_facial_landmarks(image_file, faces, output_file):
+def map_facial_landmarks(points, numFaces, image_file, output_file):
     image = Image.open(image_file)
     draw = ImageDraw.Draw(image)
 
-    #points = list()
+    faceNum = 0
 
     for face in faces:
-        for landmark in face.landmarks:
-            #print(landmark.type)
-            pos = landmark.position
-            posX = pos.x
-            posY = pos.y
-            posTuple = (posX,posY)
-            posTuple2 = (posX+10,posY+10)
+        faceNum+=1
+        for i in range(35):
+            posTuple = points[i*faceNum]
+            posTuple2 = (posTuple[0]+10,posTuple[1]+10)
             draw.ellipse((posTuple,posTuple2),'red','red')
-            #points.append(posTuple)
-
-    #draw.point(points)
 
     image.save(output_file)
 
 
-def map_facial_borderPoly(image_file, faces, output_file):
+def map_facial_borderPoly(polygons, numFaces, image_file, output_file):
     image = Image.open(image_file)
     draw = ImageDraw.Draw(image)
+
+    faceNum = 0
     
     for face in faces:
-        vertices = face.boundingPoly.vertices
-        drawVerts = list()
-        for vertex in vertices:
-            x = vertex.x
-            y = vertex.y
-            vertTup = (x,y)
-            drawVerts.append(vertTup)
+        faceNum+=1
+        drawVerts = polygons[faceNum-1]
         draw.polygon(drawVerts,'red','red')
 
     image.save(output_file)
