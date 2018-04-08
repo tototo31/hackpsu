@@ -15,8 +15,8 @@ def map_facial_landmarks(points, numFaces, image_file, output_file):
 
     for j in range(numFaces):
         faceNum+=1
-        for i in range(35):
-            posTuple = points[i*faceNum]
+        for i in range(34):
+            posTuple = points[(i*faceNum)]
             posTuple2 = (posTuple[0]+10,posTuple[1]+10)
             draw.ellipse((posTuple,posTuple2),'red','red')
 
@@ -38,6 +38,8 @@ def map_facial_borderPoly(polygons, numFaces, image_file, output_file):
 
 
 def crop_face(polygons, numFaces, image_path):
+    xShift = list()
+    yShift = list()
     for i in range(numFaces):
         image = Image.open(image_path)
         xVals = list()
@@ -52,7 +54,9 @@ def crop_face(polygons, numFaces, image_path):
         yMax = max(yVals)
         boxTup = (xMin,yMin,xMax,yMax)
         cropImage = image.crop(boxTup)
-        cropImage.save(image_path[:len(image_path)-4]+str(i)+'.jpg') 
+        cropImage.save(image_path[:len(image_path)-4]+str(i)+'.jpg')
+    return xMin, yMin
+        
         
             
             
