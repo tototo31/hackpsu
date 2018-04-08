@@ -2,7 +2,7 @@
 #This file is to calculate the landmark and border values
 #and puts them in text files
 
-def map_facial_landmarks(image_file, faces, output_file):
+def map_facial_landmarks(faces):
     points = list()
     numFaces = 0
     for face in faces:
@@ -19,7 +19,7 @@ def map_facial_landmarks(image_file, faces, output_file):
 
 
 
-def map_facial_borderPoly(image_file, faces, output_file):
+def map_facial_borderPoly(faces):
     polygons = list()
     numFaces = 0
 
