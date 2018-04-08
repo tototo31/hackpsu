@@ -37,6 +37,10 @@ def map_facial_borderPoly(faces):
 
     return polygons, numFaces
 
+def map_facial_landmark_border(faces):
+    polygons, numFaces = map_facial_borderPoly(faces)
+    points, numFaces = map_facial_landmarks(faces)
+    return points, polygons, numFaces
 
 
             
