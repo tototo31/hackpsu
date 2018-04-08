@@ -42,6 +42,8 @@ def detect_label(path):
     for label in labels:
         print(label.description)
 
+    return labels
+
 
 
 
@@ -67,6 +69,8 @@ def detect_text(path):
                     for vertex in text.bounding_poly.vertices])
 
         print('bounds: {}'.format(','.join(vertices)))
+
+    return texts
 
 def detect_face(path, max_results=4):
     #Returns an array of Face objects for the picture given

@@ -13,7 +13,7 @@ def map_facial_landmarks(points, numFaces, image_file, output_file):
 
     faceNum = 0
 
-    for face in faces:
+    for j in range(numFaces):
         faceNum+=1
         for i in range(35):
             posTuple = points[i*faceNum]
@@ -29,10 +29,10 @@ def map_facial_borderPoly(polygons, numFaces, image_file, output_file):
 
     faceNum = 0
     
-    for face in faces:
+    for j in range(numFaces):
         faceNum+=1
         drawVerts = polygons[faceNum-1]
-        draw.polygon(drawVerts,'red','red')
+        draw.polygon(drawVerts,outline='red')
 
     image.save(output_file)
             

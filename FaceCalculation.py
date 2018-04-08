@@ -25,14 +25,14 @@ def map_facial_borderPoly(faces):
 
     for face in faces:
         numFaces += 1
-        vertices = face.boundingPoly.vertices
+        vertices = face.bounding_poly.vertices
         drawVerts = list()
         for vertex in vertices:
             x = vertex.x
             y = vertex.y
             vertTup = (x,y)
             drawVerts.append(vertTup)
-        polygons.add(drawVerts)
+        polygons.append(drawVerts)
 
     return polygons, numFaces
             
